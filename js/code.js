@@ -32,9 +32,7 @@ function calculateMoney(gameObject){
 }
 
 function gameStart(gameObject){
-  console.log("Before: GLR-"+gameObject.gameLoopRef+" UPTI-"+gameObject.updateTick)
   gameObject.gameLoopRef = window.setInterval(function(){gameLoop(gameObject);}, gameObject.updateTick);
-  console.log("After: GLR-"+gameObject.gameLoopRef+" UPTI-"+gameObject.updateTick)
 }
 
 function upgradeButton(gameObject){
