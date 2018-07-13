@@ -1,11 +1,10 @@
 window.onload = function(){
-  let gameLoopRef;
   let gameObject = {
     currentMoney:0,
     curPerTick:0,
     upgradeCost:0,
     updateTick:250,
-    gameLoopRef:gameLoopRef
+    gameLoopRef:null
   };
   document.getElementById("moneyUp").addEventListener("click", function(){
     gameObject.currentMoney -= gameObject.upgradeCost;
