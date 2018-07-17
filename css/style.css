@@ -1,4 +1,4 @@
-#bar{
+#bar {
 	background-color: green;
 	width: 0%;
 	height: 18px;
@@ -7,7 +7,7 @@
 	text-align: center;
 }
 
-#progressBar{
+#progressBar {
 	height: 22px;
 	background-color: white;
 	border: 1px solid black;
@@ -15,21 +15,28 @@
 	text-align: center;
 }
 
-#progressText{
+#progressText {
 	position: relative;
 	margin: -20px auto;
 }
 
-#container{
+#container {
   border: 1px solid black;
-  width: 400px;
+  width: 500px;
+  margin: 0px auto;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+#buttons {
   margin: 0px auto;
 }
 
-#buttons{
-  margin: 0px auto;
+#moneyContainer p{
+	font-size: 20px;
 }
 
-#money{
-  margin: 0px auto;
+#money {
+	font-weight: bolder;
 }
