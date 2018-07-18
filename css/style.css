@@ -40,3 +40,7 @@
 #money {
 	font-weight: bolder;
 }
+
+#genText, #money, #costText {
+	font-weight: bold;
+}
