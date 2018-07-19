@@ -1,8 +1,8 @@
 window.onload = function(){
   let gameObject = {
     currentMoney:0,
-    upgradeRate:10.75,
-    upgradeCostMultiplier:5.5,
+    upgradeRate:1,
+    upgradeCostMultiplier:2,
     curPerTick:0,
     upgradeCost:0,
     updateTick:250,
@@ -19,9 +19,9 @@ window.onload = function(){
 }
 
 function addGeneration(gameObject){
-  gameObject.curPerTick = Math.floor((gameObject.curPerTick * gameObject.upgradeRate) + gameObject.upgradeRate);
+  gameObject.curPerTick += Math.floor(gameObject.upgradeRate * gameObject.upgradeRate);
   gameObject.upgradeCost = Math.floor((gameObject.curPerTick * gameObject.upgradeRate) * gameObject.upgradeCostMultiplier);
-  document.getElementById("genText").innerHTML = Math.floor(gameObject.curPerTick + gameObject.upgradeRate);
+  document.getElementById("genText").innerHTML = Math.floor((gameObject.upgradeRate * gameObject.upgradeRate) + gameObject.curPerTick);
   document.getElementById("costText").innerHTML = Math.floor(gameObject.upgradeCost);
   upgradeButton(gameObject);
 }
